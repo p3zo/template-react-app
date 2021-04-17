@@ -106,6 +106,6 @@ if [[ "$(prompt "$msg")" == "yes" ]]; then
     fi
 fi
 
-git clean -xfd -e node_modules -e cypress.env.json -e serviceAccount.json
+git clean -xfd -e node_modules
 git checkout "$SOURCE_BRANCH"
 rm -rf "$TMPDIR"
