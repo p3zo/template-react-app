@@ -95,7 +95,6 @@ git commit --allow-empty --no-verify -m "Deploy: $SOURCE_COMMIT"
 
 echo
 printf 'Please review the build output now---run:\n'
-# printf '    cd "%s" && python -m SimpleHTTPServer\n' "$TMPDIR"
 printf '    cd "%s" && serve -s\n' "$TMPDIR"
 msg="Do you want to deploy?"
 if [[ "$(prompt "$msg")" == "yes" ]]; then
