@@ -90,7 +90,7 @@ popd
 git checkout --orphan "$TARGET_BRANCH" || git checkout "$TARGET_BRANCH"
 git rm -r --cached --ignore-unmatch .
 cp -r "$TMPDIR"/* .
-git add "${STAGE[@]}"
+git add "${STAGE[@]}" -f
 git commit --allow-empty --no-verify -m "Deploy: $SOURCE_COMMIT"
 
 echo
