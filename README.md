@@ -34,7 +34,7 @@ yarn lint
 
 ###### Deploy to production
 
-Push changes to the `master` branch, then run:
+Push changes to the `main` branch, then run:
 
 ```bash
 yarn build && ./deploy.sh

@@ -1,7 +1,7 @@
 #!/bin/bash -e
 # Adapted from https://github.com/wchargin
 
-: "${SOURCE_BRANCH:=master}"
+: "${SOURCE_BRANCH:=main}"
 : "${TARGET_BRANCH:=gh-pages}"
 : "${ORIGIN:=origin}"
 
