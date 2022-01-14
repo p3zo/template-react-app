@@ -6,8 +6,8 @@
     "description": "A quick jumping-off point for React apps",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server",
-        "build": "webpack --mode=production",
+        "start": "export NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server",
+        "build": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --mode=production",
         "serve": "serve --single --listen 8000 dist",
         "lint": "node node_modules/eslint/bin/eslint.js src --ext '.js,.jsx'"
     },
