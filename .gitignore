@@ -1,9 +1,8 @@
-# dependencies
 node_modules
 
-# misc
 .DS_Store
 bundle.js
+.idea
 
 npm-debug.log*
 yarn-debug.log*
